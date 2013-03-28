@@ -1,0 +1,124 @@
+/* 
+Theme Name: Corporate Slave
+Theme URI: http://www.samdevol.com
+Description: This template is a modified version of Corporate Slave, by dreamLogic http://www.dream-logic.com
+Author: Sam Devol
+Author URI: http://www.samdevol.com
+Version: 0.99
+Tags: three-columns, left-sidebar, light, sticky-post, custom-background, theme-options, translation-ready, flexible-width
+License: GNU General Public License (GPL) version 3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-responsive.css');
+
+body{background:#FFF;color:#666;list-style:none;margin:0;padding:0;}
+#wrapper{min-width:640px;margin:10px auto;}
+#header{border-bottom:#CCC 1px solid;height:120px;width:100%;}
+#title{color:#CCC;letter-spacing:-1px;text-align:right;margin:30px 10px 0;}
+#description{color:#CCC;letter-spacing:-1px;text-align:right;margin:0 10px;}
+#container{border-left:#CCC 1px solid;float:right;width:78%;margin:0;}
+#toppost {margin:30px 20px 0;height:auto;border-bottom:#CCC 0px solid;}
+#single-content{float:left;text-align:left;width:99%;padding:20px;}
+#content1{float:left;text-align:justify;width:45%;padding:20px;}
+#content2{text-align:justify;padding:20px;margin-left:51%}
+#sidebar ul, ol {margin:0;padding:0;}
+div.post-permalink{float:right;}
+div.post-comments{float:left;}
+h3.post-date,p.post-date-single,h3#comment-count{text-align:right;word-spacing:0.2em;margin:-15px 0 10px;}
+h3.post-date,div.post-entry h1,div.post-entry h2,div.post-entry h3,div.post-entry h4,div.post-entry h5,div.post-entry h6,div#sidebar ul li p{background:#fff;font-size:0.8em;}
+div.post-entry blockquote{background:#fff;display:block;font-size:0.9em;width:85%;margin:0;padding:30px;border:none;}
+div.post-entry blockquote p{font:12px/13px georgia, palatino, serif;font-style:italic;text-indent:10px;line-height:2em;}
+div.post-entry blockquote:before,blockquote:after{background:transparent;color:#6C8EFF;display:block;font:16px/18px georgia, palatino, serif;font-size:500%;width:50px;}
+div.post-entry blockquote:before{content:"\201C ";height:0;margin:0 0 -0.4em -0.45em;}
+div.post-entry blockquote:after{content:"\201D";height:0;margin-bottom:0;margin-left:93%;margin-top:-0.2em;}
+#content2 div.post-entry blockquote{background:#fff;display:block;font-size:0.9em;line-height:120%;width:90%;margin:0;padding:0;}
+#content2 div.post-entry blockquote p{font:12px/13px georgia, palatino, serif;font-style:italic;text-indent:10px;margin:5% 0 0 14%;}
+#content2 div.post-entry blockquote:before{content:open-quote;height:0;margin:10% 0% -10% -0%;}
+#content2 div.post-entry blockquote:after{content:close-quote;height:0;margin-bottom:0;margin-left:99%;margin-top:0;}
+p.list-title{margin:5px;}
+div.post-entry ul li,div.post-entry ol li{line-height:120%;margin:0 0 0.5em -1.5em;}
+div.post-entry h1,div.post-entry h2,div.post-entry h3,div.post-entry h4,div.post-entry h5,div.post-entry h6{font-size:1.3em;font-weight:400;margin:1.2em 0 -0.6em;}
+p.list-title {margin:5px 0 15px;}
+div.pullquote{color:#333;float:right;font:16px/18px georgia, palatino, serif;text-align:center;width:40%;margin:2% 1% 2% 3%;padding:0;}
+#content2 div.pullquote{color:#333;float:right;font:16px/18px georgia, palatino, serif;text-align:center;width:40%;margin:2% 1% 2% 3%;padding:0;}
+div.post-footer p,h4#comment-header,div.nav-left,div.nav-right,.center{text-align:center;}
+div.nav-left {float:left; margin-left:20%;}
+div.nav-right {float:right; margin-right:20%;}
+div.post-header p,p.post-date-single,div.post-footer,h3#comment-count,div#sidebar ul li h2{background:#fff;color:#888;}
+div.post-header hr{background:#fff;color:#444;margin:1em 2em 4em;}
+div.post-header .post-permalink {float:right;}
+div.post-header .post-comments {float:left;}
+div.post-title a {color:#6C8EFF;font-size:1.3em;font-weight:700;text-align:left;}
+div.post-entry ul li{list-style:disc inside;}
+div.post-entry ul li,div.post-entry ol li{line-height:120%;}
+div.post-entry h1,div.post-entry h2,div.post-entry h3,div.post-entry h4,div.post-entry h5,div.post-entry h6{font-size:1.3em;font-weight:400;margin:1.2em 0 -0.6em;}
+div.widecolumn{margin:0;padding:0 4% 0 2%;}
+div.widecolumn .single-post{line-height:150%;width:94%;margin:10px;padding:0;}
+div.widecolumn li,div.widecolumn .post-footer p{margin:0 15px;padding:0;}
+div.widecolumn .post-entry blockquote:after{content:close-quote;height:0;margin-bottom:0;margin-left:99%;margin-top:-0.2em;text-align:right;}
+div.formcontainer p{margin:0.5em 2em 1em;}
+div.formcontainer {font-size: 1em;margin: 0 0 3em 0;width: 100%;}
+div.formright, div.formleft {display: inline;float: left;margin: 0 0 0.5em 0;color: #888;}
+div.formleft {clear: both;text-align: right;width: 15%;margin: 0 2% 0 0;}
+div.formright { width: 80%; }
+input#searchsubmit, input#submit { font-family:inherit;font-weight:700;border: 1px outset #999;margin:0 6px 1px;color:#3366ff; }
+input#s, input#author, input#email, input#url { width: 100px; }
+input#s, input#author, input#email, input#url, textarea {border: 1px inset #999;margin: 1px;}
+h4#respond{font-size:1.3em;font-weight:400;margin:2em 0 0 1.5em;}
+h3#comment-count{font-size:0.9em;margin:0;}
+h4#comment-header{font-size:1.6em;font-weight:400;margin:0.1em 0 1em;}
+div#commentform{margin:0 0 0 2em;}
+div#comments ol li{background:#f6f7f9;color:#111;margin:1em 5%;padding:0.5em 1em;}
+div#comments ol li.alt{background:#e7eaed;color:#111;}
+div#comments ol li p{margin:0.5em 0;}
+div#comments ol li p.comment-metadata{font-size:0.9em;}
+div#comments blockquote{margin:3em 2em 2em 3.5em;}
+div#recentcomments{font-size:0.8em;}
+img{border:none;}
+a img{border:#6C8EFF 1px solid;}
+img.center{display:block;margin:0.4em auto;}
+img.alignright{float:right;margin:0.4em 0 0.4em 1.1em;}
+img.alignleft{float:left;margin:0.4em 1.1em 0.4em 0;}
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}
+.aligncenter {margin: 0 auto;}
+#sidebar{overflow:hidden;float:right;border-right:#CCC 1px solid;text-align:right;margin-top:32px;width:175px;margin-right:-1px;margin-left:-30%;}
+#sidebar ul, ol {margin:0;padding:0;}
+div#sidebar ul {list-style:none;}
+div#sidebar .sidebartext{color:#888;font-size:0.75em;font-weight:400;line-height:125%;margin:0 5px 10px 0;}
+div#sidebar .sidebartext img{margin:0 4px 5px 0;}
+div#sidebar img {margin:0 0 2px;border:none;}
+div#sidebar .widget {margin-bottom:1em;}
+#calendar table {margin:0 20px;}
+.navlist{background:#F3F3F3;font-weight:700;margin-left:0;width:175px;padding:0 1px 1px;}
+.navlist li{border-top:#CCC 1px solid;list-style:none;text-align:right;margin:0;}
+.navlist li a{background:#F3F3F3;display:block;text-decoration:none;padding:0.25em 0.5em 0.25em 0.75em;}
+.navlist li a:link{color:#6C8EFF;}
+.navlist li a:visited{color:#999;}
+.navlist li a:hover{background:#FFF;color:#666;border-color:#FE3;}
+.navlist li {position:relative;font-size:1em;margin:0;padding:0;}
+div#sidebar .widgettitle {font-size:1em;font-weight:700;line-height:215%;color:#3366FF;background:#F3F3F3;border-top:#CCC 1px solid;margin:0;padding:0 6px 2px 0;}
+.navlist li p,div#sidebar ul li ul,div#sidebar ul li ul li{line-height:120%;margin:0 0.5em 0 0;padding:0;}
+.navlist li ul li ul li{font-size:0.9em;margin:0 0 0 1em;}
+div#utw_widget{margin:0 10px;}
+#single-content .dateblock{float:right;margin:0 20px;}
+#footer{border-top:#CCC 1px solid;clear:both;font-size:10px;height:30px;margin-top:10px;text-align:center;text-transform:lowercase;}
+a:link,a:active,a:visited{color:#999;text-decoration:none;}
+a:hover,a:active:hover,a:visited:hover{color:#6C8EFF;text-decoration:underline;}
+.clearer {clear: both;margin-top: -1px;}
+span.caps { font-variant:small-caps; }
+span.important { font-weight:bold; }
+code, pre { font: 1.2em/normal "courier new", courier, monospace; overflow: auto}
+#calendar_wrap {float:right; margin:15px 10px;}
+/* Fancy Dates
+ */
+.dateblock {text-align: center;width: 64px;float:left;background-image:url(images/calendar.png);height: 54px;margin: -8px 25px 0 0;padding: 8px 0 0 0;background-repeat: no-repeat;background-position: 0px 0px;}
+.post-header .dateblock {text-align: center;width: 64px;float:left;background-image:url(images/calendar.png);height: 54px;margin: -8px 25px 0 50px;padding: 8px 0 0 0;background-repeat: no-repeat;background-position: 0px 0px;}
+.month {font-size: 10px;margin: 5px;display:inline;font-family:verdana, geneva, sans-serif;color:#FFFFFF;}
+.year {font-size: 8px;margin:0px 0px 0 4px;display:inline;font-family:Verdana;color:#FFFFFF;}
+.day {font-size: 24px;margin: 0;font-weight:bold;font-family: Georgia;}
